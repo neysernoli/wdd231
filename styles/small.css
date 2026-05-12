@@ -33,15 +33,15 @@ header span {
 nav a {
     text-decoration: none;
     padding: 0.5rem;
-    border: 1px solid #060606;
+    border: 1px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     text-align: center;
 }
 nav {
     display: none;
     flex-direction: column;
-    border: 1px solid #060606;
-    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     background-color: rgb(76, 128, 197);
 }
 nav a:hover {
@@ -72,7 +72,7 @@ section p {
     text-align: justify;
 }
 .certificates {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 footer {
     margin:  0;
@@ -106,18 +106,18 @@ footer img {
     border: none;
     border-radius: 5px;
     background-color: rgb(76, 128, 197);
-    color: black;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 .filters button:hover {
     background-color: rgb(182, 230, 246);
-    color: black;
+    color: rgb(0, 0, 0);
     transition: background-color 0.3s ease;
 }
 .course-card {
     padding: 1rem;
     margin: 0.5rem 0;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 8px;
     text-align: center;
     background-color: rgb(76, 128, 197);
@@ -127,7 +127,7 @@ footer img {
 
 .completed {
     background-color: rgb(182, 230, 246);
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 #credits {
