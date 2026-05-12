@@ -1,0 +1,147 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+header {
+    display: grid;
+    grid-template-columns: 45px auto 40px;
+    padding: 10px;
+    align-items: center;
+}
+.logo {
+    width: 40px;
+}
+header span {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#nav-button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    
+}
+nav a {
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #060606;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+nav {
+    display: none;
+    flex-direction: column;
+    border: 1px solid #060606;
+    color: black;
+    background-color: rgb(76, 128, 197);
+}
+nav a:hover {
+    background-color: rgb(182, 230, 246);
+    transition: background-color 0.3s ease;
+}
+nav.open {
+    display: flex
+}
+main {
+    padding: 1rem;
+}
+h1 {
+    margin-bottom: 5px;
+}
+section {
+    background-color: rgb(182, 230, 246);
+}
+section h2 {
+    color: 
+    rgb(0, 0, 0);
+    background-color: rgb(76, 128, 197);
+    padding: 2px;
+    text-align: center;
+}
+section p {
+    padding: 5px;
+    text-align: justify;
+}
+.certificates {
+    background-color: white;
+}
+footer {
+    margin:  0;
+}
+footer img {
+    width: 40px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.copyright {
+    background-color: rgb(76, 128, 197);
+    text-align: center;
+    padding: 0.5rem;
+}
+.copyright p {
+    margin: 0;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.filters button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(76, 128, 197);
+    color: black;
+    cursor: pointer;
+}
+.filters button:hover {
+    background-color: rgb(182, 230, 246);
+    color: black;
+    transition: background-color 0.3s ease;
+}
+.course-card {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(76, 128, 197);
+
+    animation: fade 0.5s ease;
+}
+
+.completed {
+    background-color: rgb(182, 230, 246);
+    color: black;
+}
+
+#credits {
+    text-align: center;
+}
+
+@keyframes fade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
