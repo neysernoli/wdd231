@@ -98,7 +98,7 @@ h1 {
 }
 
 #navMenu a.active {
-  background-color: white;
+  background-color: var(--background-color);
   color: var(--primary-color);
 }
 
@@ -151,14 +151,14 @@ h1 {
   background-color: var(--background-color);
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px var(--text-color);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-bottom: 1rem;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px var(--primary-color);
 }
 
 .card h2 {
