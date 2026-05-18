@@ -1,0 +1,216 @@
+/* ===== DESIGN SYSTEM ===== */
+
+:root {
+  --primary-color: #222222;
+  --secondary-color: #555555;
+  --background-color: #f4f4f4;
+  --text-color: #222222;
+  --accent-color: #0066cc;
+
+  --heading-font: Arial, sans-serif;
+  --body-font: Arial, sans-serif;
+}
+
+/* ===== GENERAL ===== */
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  filter: brightness(0) invert(1);
+}
+
+.brand a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+main {
+  padding: 1rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--heading-font);
+}
+
+#menuBtn {
+  background: none;
+  border: none;
+  color: var(--background-color);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#navMenu {
+  display: none;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+#navMenu a {
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+
+  width: fit-content;
+
+  transition: background-color 0.3s ease,
+              color 0.3s ease;
+}
+
+#navMenu a:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-weight: bolder;
+}
+
+#navMenu.open {
+  display: flex;
+}
+
+.active {
+  background-color: var(--background-color);
+  color: var(--primary-color) !important;
+  border-radius: 6px;
+}
+
+/* ===== BUTTONS ===== */
+
+.view-buttons {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.view-buttons button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-buttons button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ===== GRID VIEW ===== */
+
+#members.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* ===== LIST VIEW ===== */
+
+#members.list {
+  display: block;
+}
+
+#members.list .card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+  background-color: var(--background-color);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-top,
+.footer-bottom {
+  margin-bottom: 1rem;
+}
+
+.footer-top p,
+.footer-bottom p {
+  margin: 0.3rem 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social img {
+  width: 40px;
+  transition: transform 0.2s ease;
+  filter: brightness(0) invert(1);
+}
+
+.social img:hover {
+  transform: scale(1.1);
+}

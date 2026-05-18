@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Tech Solutions Peru",
+    "address": "Chiclayo, Peru",
+    "phone": "999-111-222",
+    "website": "https://techsolutions.com",
+    "image": "tech1.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Market Plus",
+    "address": "Lambayeque, Peru",
+    "phone": "999-222-333",
+    "website": "https://marketplus.com",
+    "image": "market1.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Design Studio Creative",
+    "address": "Lima, Peru",
+    "phone": "999-333-444",
+    "website": "https://designstudio.com",
+    "image": "design1.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Andes Logistics",
+    "address": "Cusco, Peru",
+    "phone": "999-444-555",
+    "website": "https://andeslogistics.com",
+    "image": "logistics1.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Green Agro Export",
+    "address": "Piura, Peru",
+    "phone": "999-555-666",
+    "website": "https://greenagro.com",
+    "image": "agro1.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Innova Marketing",
+    "address": "Trujillo, Peru",
+    "phone": "999-666-777",
+    "website": "https://innovamarketing.com",
+    "image": "marketing1.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Peru Tech Hub",
+    "address": "Arequipa, Peru",
+    "phone": "999-777-888",
+    "website": "https://perutechhub.com",
+    "image": "techhub1.jpg",
+    "membership": 3
+  }
+]

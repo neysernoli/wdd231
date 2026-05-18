@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) {
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
+  #members.list .card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand a {
+    text-decoration: none;
+  }
+  #menuBtn {
+    display: none;
+  }
+
+  #navMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  main {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .view-buttons button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    align-items: center;
+  }
+
+
+
+}
