@@ -4,7 +4,7 @@
     "address": "Chiclayo, Peru",
     "phone": "999-111-222",
     "website": "https://techsolutions.com",
-    "image": "tech1.jpg",
+    "image": "images/one.jpg",
     "membership": 3
   },
   {
@@ -12,7 +12,7 @@
     "address": "Lambayeque, Peru",
     "phone": "999-222-333",
     "website": "https://marketplus.com",
-    "image": "market1.jpg",
+    "image": "images/two.jpg",
     "membership": 2
   },
   {
@@ -20,7 +20,7 @@
     "address": "Lima, Peru",
     "phone": "999-333-444",
     "website": "https://designstudio.com",
-    "image": "design1.jpg",
+    "image": "images/three.jpg",
     "membership": 1
   },
   {
@@ -28,7 +28,7 @@
     "address": "Cusco, Peru",
     "phone": "999-444-555",
     "website": "https://andeslogistics.com",
-    "image": "logistics1.jpg",
+    "image": "images/four.jpg",
     "membership": 2
   },
   {
@@ -36,7 +36,7 @@
     "address": "Piura, Peru",
     "phone": "999-555-666",
     "website": "https://greenagro.com",
-    "image": "agro1.jpg",
+    "image": "images/five.jpg",
     "membership": 3
   },
   {
@@ -44,7 +44,7 @@
     "address": "Trujillo, Peru",
     "phone": "999-666-777",
     "website": "https://innovamarketing.com",
-    "image": "marketing1.jpg",
+    "image": "images/six.jpg",
     "membership": 1
   },
   {
@@ -52,7 +52,7 @@
     "address": "Arequipa, Peru",
     "phone": "999-777-888",
     "website": "https://perutechhub.com",
-    "image": "techhub1.jpg",
+    "image": "images/seven.jpg",
     "membership": 3
   }
 ]
