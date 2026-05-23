@@ -1,12 +1,10 @@
-/* ===== DESIGN SYSTEM ===== */
-
 :root {
   --primary-color: #222222;
   --secondary-color: #555555;
   --background-color: #f4f4f4;
   --text-color: #222222;
   --accent-color: #0066cc;
-  --hover-color: #444444;
+
   --heading-font: Arial, sans-serif;
   --body-font: Arial, sans-serif;
 }
@@ -25,6 +23,9 @@ header {
   color: var(--background-color);
   padding: 1rem;
   text-align: center;
+}
+header a {
+  color: var(--background-color);
 }
 
 .top-bar {
@@ -80,26 +81,22 @@ h1 {
   text-decoration: none;
   padding: 0.5rem 0.8rem;
   border-radius: 6px;
-
   width: fit-content;
 
-  transition: background-color 0.3s ease,
-              color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-#navMenu a:hover {
-  background-color: var(--hover-color);
+#navMenu a:hover,
+#navMenu a.active {
+  background-color: var(--secondary-color);
   color: var(--background-color);
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 #navMenu.open {
   display: flex;
-}
-
-#navMenu a.active {
-  background-color: var(--hover-color);
-  color: var(--background-color);
 }
 
 /* ===== BUTTONS ===== */
@@ -117,21 +114,25 @@ h1 {
   background-color: var(--primary-color);
   color: var(--background-color);
   cursor: pointer;
+
   transition: background-color 0.3s ease;
 }
 
 .view-buttons button:hover {
-  background-color: var(--hover-color);
+  background-color: var(--secondary-color);
 }
 
-/* ===== GRID VIEW ===== */
+/* ===== MEMBERS ===== */
+
 #members {
   min-height: 600px;
 }
 
+/* ===== GRID VIEW ===== */
+
 #members.grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
   padding: 1rem;
 }
@@ -145,7 +146,13 @@ h1 {
 #members.list .card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;;
+  justify-content: space-between;
+}
+
+/* ===== REMOVE IMAGES IN LIST VIEW ===== */
+
+#members.list .card img {
+  display: none;
 }
 
 /* ===== CARDS ===== */
@@ -154,29 +161,34 @@ h1 {
   background-color: var(--background-color);
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 4px 12px var(--text-color);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-bottom: 1rem;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px var(--primary-color);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .card h2 {
   margin-top: 0;
 }
+
 .card img {
   width: 100%;
   height: 180px;
+
   border-radius: 10px;
-  object-fit: cover; 
+
+  object-fit: cover;
 }
-#members.list .card img {
-  width: 150px;
-  height: 130px;
-}
+
 .card a {
   text-decoration: none;
   color: var(--accent-color);
@@ -192,7 +204,9 @@ h1 {
 footer {
   background-color: var(--primary-color);
   color: var(--background-color);
+
   padding: 2rem 1rem;
+
   text-align: center;
 }
 
@@ -210,12 +224,15 @@ footer {
   display: flex;
   justify-content: center;
   gap: 1rem;
+
   margin: 1rem 0;
 }
 
 .social img {
   width: 40px;
+
   transition: transform 0.2s ease;
+
   filter: brightness(0) invert(1);
 }
 
