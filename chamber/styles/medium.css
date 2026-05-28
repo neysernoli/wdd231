@@ -4,4 +4,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .spotlights-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 }

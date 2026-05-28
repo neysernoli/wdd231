@@ -37,4 +37,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
   }
+
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .spotlights-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lambayeque Business Chamber Directory</title>
+    <title>Lambayeque Business Chamber Home Page</title>
     <meta name="description" content="Official Chamber of Commerce directory showcasing local businesses, contact information, and community resources.">
     <meta name="author" content="Neyser Novoa">
 
@@ -21,44 +21,91 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <!-- script! -->
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
 
     <!-- open graph! -->
     <meta property="og:title" content="Lambayeque Business Chamber">
     <meta property="og:description" content="Explore local businesses, chamber members, and community resources in Lambayeque Business Chamber Directory.">
     <meta property="og:image" content="https://neysernoli.github.io/wdd231/chamber/images/municipalidad.jpg">
-    <meta property="og:url" content="https://neysernoli.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://neysernoli.github.io/wdd231/chamber">
 </head>
 <body>
     <header>
       <div class="top-bar">
         <div class="brand">
-          <img src="images/edificio.png" alt="Chamber Logo" class="logo" width="50" height="50">
-          <a href="directory.html">Lambayeque Business Chamber</a>
+          <img src="images/edificio.png" alt="Chamber Logo" class="logo" width="70" height="70">
+          <a href="index.html">Lambayeque Business Chamber</a>
         </div>
 
         <button id="menuBtn">☰</button>
       </div>
 
       <nav id="navMenu">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="discover.html">Discover</a>
-        <a href="directory.html" class="active">Directory</a>
+        <a href="directory.html">Directory</a>
         <a href="join.html">Join</a>
       </nav>
 
 </header>
     <main>
-      <h1>Business Directory</h1>
-        <div class="view-buttons">
-          <button id="grid">Grid</button>
-          <button id="list">List</button>
+      <section class="hero">
+        <img src="images/heroimg.webp" alt="Centro de Chiclayo" width="1200" height="600">
+
+        <div class="hero-content">
+          <a href="join.html" class="cta-button">
+            Join the Chamber
+          </a>
         </div>
-        <section id="members"></section>
+      </section>
+
+      <h1>Welcom to the Lambayeque Business Chamber</h1>
+
+      <section class="info-container">
+
+        <section class="events">
+          <h2>Events</h2>
+          <p>Business networking event this Friday</p>
+        </section>
+
+        <section class="weather">
+          <h2>Weather</h2>
+
+          <div class="weather-content">
+            <img id="weather-icon" src="" alt="weather icon" width="80" height="80">
+
+            <div class="weather-info">
+
+              <p>Humidity: <span id="humidity"></span></p>
+              <p>High: <span id="high-temp"></span></p>
+              <p>Low: <span id="low-temp"></span></p>
+              <p>Temperature: <span id="current-temp"></span></p>
+              <p>Condition: <span id="weather-desc"></span></p>
+
+            </div>
+          </div>
+        </section>
+        <section class="forecast">
+          <h2>Weather Forecast</h2>
+
+          <div id="forecast-container"></div>
+
+        </section>
+
+      </section>
+
+      <section class="spotlights">
+        <h2>Business Spotlights</h2>
+        <div class="spotlights-container">
+
+        </div>
+      </section>
+
     </main>
+     
   <footer>
     <div class="footer-top">
       <p><strong>Chamber of Commerce</strong></p>
