@@ -257,8 +257,8 @@ footer {
 }
 
 .cta-button {
-  background-color: #222;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--background-color);
   padding: 1rem 1.5rem;
   text-decoration: none;
   border-radius: 8px;
@@ -274,10 +274,10 @@ footer {
 .events,
 .weather,
 .forecast {
-  background-color: white;
+  background-color: var(--background-color);
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  box-shadow: 0 4px 12px var(--primary-color); 
 }
 
 .weather-content {
@@ -295,10 +295,10 @@ footer {
 }
 
 .spotlights-container section {
-  border: 1px solid #ccc;
+  border: 1px solid var(--background-color);
   padding: 1rem;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--background-color);
   text-align: center;
 }
 
@@ -315,7 +315,7 @@ footer {
 }
 
 #forecast-container div {
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
   padding: 0.5rem;
   border-radius: 8px;
 }
