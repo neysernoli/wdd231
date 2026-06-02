@@ -18,6 +18,18 @@ modalLinks.forEach(link => {
 
 });
 
+const closeButtons = document.querySelectorAll(".close-modal");
+
+closeButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    button.closest("dialog").close();
+
+  });
+
+});
+
 const timestamp = document.querySelector("#timestamp");
 
 timestamp.value = new Date().toISOString();
