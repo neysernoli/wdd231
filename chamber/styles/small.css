@@ -4,7 +4,14 @@
   --background-color: #f4f4f4;
   --text-color: #222222;
   --accent-color: #0066cc;
-  --next-color: #0066cc33;
+
+  --focus-color: #0066cc33;
+
+  --shadow-light: rgba(0, 0, 0, 0.10);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+  --shadow-dark: rgba(0, 0, 0, 0.25);
+
+  --overlay-color: rgba(0, 0, 0, 0.50);
 
   --heading-font: Arial, sans-serif;
   --body-font: Arial, sans-serif;
@@ -164,7 +171,7 @@ h1 {
   padding: 1rem;
   margin-bottom: 1rem;
 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px var(--shadow-medium);
 
   transition:
     transform 0.2s ease,
@@ -174,7 +181,7 @@ h1 {
 .card:hover {
   transform: translateY(-5px);
 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 20px var(--shadow-dark);
 }
 
 .card h2 {
@@ -278,7 +285,7 @@ footer {
   background-color: var(--background-color);
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px var(--primary-color); 
+  box-shadow: 0 4px 12px var(--shadow-medium); 
 }
 
 .weather-content {
@@ -334,7 +341,7 @@ form {
 
   border-radius: 12px;
 
-  box-shadow: 0 4px 12px var(--primary-color);
+  box-shadow: 0 4px 12px var(--shadow-medium);
 }
 
 form label {
@@ -370,7 +377,7 @@ form textarea:focus {
 
   border-color: var(--accent-color);
 
-  box-shadow: 0 0 0 3px var(--next-color);
+  box-shadow: 0 0 0 3px var(--focus-color);
 
 }
 
@@ -419,7 +426,7 @@ input[type="submit"]:hover {
 
   border-radius: 12px;
 
-  box-shadow: 0 4px 12px var(--primary-color);
+  box-shadow: 0 4px 12px var(--shadow-medium);
 
   text-align: center;
 
@@ -438,7 +445,7 @@ input[type="submit"]:hover {
 
   transform: translateY(-6px);
 
-  box-shadow: 0 10px 24px var(--primary-color);
+  box-shadow: 0 10px 24px var(--shadow-dark);
   cursor: pointer;
 
 }
@@ -485,10 +492,14 @@ dialog {
   padding: 2rem;
 
   max-width: 400px;
+
+  background-color: var(--background-color);
+
+  color: var(--text-color);
 }
 
 dialog::backdrop {
-  background: var(--primary-color);
+  background: var(--overlay-color);
 }
 
 @keyframes appear {
