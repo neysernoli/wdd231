@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Lambayeque Business Chamber</title>
+    <meta name="description" content="Apply to join the Lambayeque Business Chamber and explore membership benefits.">
+    <meta name="author" content="Neyser Novoa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--favicon!-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- styles! -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- script! -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+
+    <!-- open graph! -->
+    <meta property="og:title" content="Lambayeque Business Chamber">
+    <meta property="og:description" content="Explore local businesses, chamber members, and community resources in Lambayeque Business Chamber Directory.">
+    <meta property="og:image" content="https://neysernoli.github.io/wdd231/chamber/images/municipalidad.jpg">
+    <meta property="og:url" content="https://neysernoli.github.io/wdd231/chamber">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="brand">
+      <img src="images/edificio.png" alt="Chamber Logo" class="logo" width="70" height="70">
+      <a href="index.html">Lambayeque Business Chamber</a>
+    </div>
+
+      <button id="menuBtn">☰</button>
+    </div>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html" class="active">Join</a>
+    </nav>
+  </header>
+  
+  <main>
+
+    <h1>Join the Chamber</h1>
+
+    <div class="join-layout">
+      <form method="get" action="thankyou.html">
+
+        <label>
+          First Name
+          <input
+            type="text"
+            name="firstname"
+            required
+            title="Enter your first name"
+            autocomplete="given-name">
+        </label>
+
+        <label>
+          Last Name
+          <input
+            type="text"
+            name="lastname"
+            required
+            title="Enter your last name"
+            autocomplete="family-name">
+        </label>
+
+        <label>
+          Organization Title
+          <input
+            type="text"
+            name="orgtitle"
+            title="Enter organization title"
+            autocomplete="organization-title"
+            pattern="[A-Za-z\s\-]{7,}">
+        </label>
+
+        <label>
+          Email
+          <input
+            type="email"
+            name="email"
+            required
+            title="Enter your email"
+            autocomplete="email"
+            placeholder="example@email.com">
+        </label>
+
+        <label>
+          Mobile Phone
+          <input
+            type="tel"
+            name="phone"
+            required
+            title="Enter mobile phone"
+            autocomplete="tel">
+        </label>
+
+        <label>
+          Organization Name
+          <input
+            type="text"
+            name="organization"
+            required
+            title="Enter organization"
+            autocomplete="organization">
+        </label>
+
+        <label>
+          Membership Level
+
+          <select name="membership" required>
+
+            <option value="" disabled selected>
+              Select Membership
+            </option>
+
+            <option value="np">
+              NP Membership
+            </option>
+
+            <option value="bronze">
+              Bronze Membership
+            </option>
+
+            <option value="silver">
+              Silver Membership
+            </option>
+
+            <option value="gold">
+              Gold Membership
+            </option>
+
+          </select>
+
+        </label>
+
+        <label>
+          Business Description
+
+          <textarea
+            name="description"
+            title="Business description"
+            rows="5">
+          </textarea>
+
+        </label>
+
+        <input
+          type="hidden"
+          id="timestamp"
+          name="timestamp">
+
+        <input
+          type="submit"
+          value="Apply for Membership">
+
+      </form>
+
+      <section class="membership-cards">
+
+        <article class="membership-card np">
+          <h2>NP Membership</h2>
+          <a href="#np-modal">More Information</a>
+        </article>
+
+        <article class="membership-card bronze">
+          <h2>Bronze Membership</h2>
+          <a href="#bronze-modal">More Information</a>
+        </article>
+
+        <article class="membership-card silver">
+          <h2>Silver Membership</h2>
+          <a href="#silver-modal">More Information</a>
+        </article>
+
+        <article class="membership-card gold">
+          <h2>Gold Membership</h2>
+          <a href="#gold-modal">More Information</a>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <dialog id="np-modal">
+    <h2>NP Membership</h2>
+
+    <p>
+      Free membership for non-profit organizations.
+    </p>
+
+    <ul>
+      <li>Directory listing</li>
+      <li>Community participation</li>
+      <li>No annual fee</li>
+    </ul>
+
+    <button onclick="this.parentElement.close()">
+      Close
+    </button>
+  </dialog>
+
+
+  <dialog id="bronze-modal">
+    <h2>Bronze Membership</h2>
+
+    <p>
+      Entry-level membership with business exposure.
+    </p>
+
+    <ul>
+      <li>Directory listing</li>
+      <li>Training events</li>
+      <li>Basic promotions</li>
+    </ul>
+
+    <button onclick="this.parentElement.close()">
+      Close
+    </button>
+  </dialog>
+
+
+  <dialog id="silver-modal">
+    <h2>Silver Membership</h2>
+
+    <p>
+      Increased visibility and benefits.
+    </p>
+
+    <ul>
+      <li>Advertising opportunities</li>
+      <li>Event discounts</li>
+      <li>Priority support</li>
+    </ul>
+
+    <button onclick="this.parentElement.close()">
+      Close
+    </button>
+  </dialog>
+
+
+  <dialog id="gold-modal">
+    <h2>Gold Membership</h2>
+
+    <p>
+      Premium chamber benefits.
+    </p>
+
+    <ul>
+      <li>Featured spotlight</li>
+      <li>VIP events</li>
+      <li>Maximum promotion</li>
+    </ul>
+
+    <button onclick="this.parentElement.close()">
+      Close
+    </button>
+  </dialog>
+     
+  <footer>
+    <div class="footer-top">
+      <p><strong>Chamber of Commerce</strong></p>
+      <p>10 Rue De La Paix</p>
+      <p>Timbuktu, Mali 999</p>
+      <p>info@timbuktucc.org</p>
+      <p>(223) 555-2300</p>
+    </div>
+
+    <div class="social">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img src="images/github.svg" alt="github" width="40" height="40"></a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.svg" alt="linkedin" width="40" height="40"></a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg" alt="instagram" width="40" height="40"></a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>WDD231 Class Project</p>
+      <p>&copy; <span id="year"></span> Neyser Novoa</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>   
+</body>
+</html>
