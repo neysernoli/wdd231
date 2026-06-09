@@ -517,3 +517,53 @@ dialog::backdrop {
   }
 
 }
+
+#visitor-message {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  min-height: 50px;
+}
+
+#places-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+#places-grid article {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
+#places-grid {
+  display: grid;
+  min-height: 800px;
+  grid-template-areas: 
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+article:nth-child(1) { grid-area: card1; }
+article:nth-child(2) { grid-area: card2; }
+article:nth-child(3) { grid-area: card3; }
+article:nth-child(4) { grid-area: card4; }
+article:nth-child(5) { grid-area: card5; }
+article:nth-child(6) { grid-area: card6; }
+article:nth-child(7) { grid-area: card7; }
+article:nth-child(8) { grid-area: card8; }
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover | Lambayeque Business Chamber</title>
+    <meta name="description" content="Discover the best attractions, culture, and history of the Lambayeque region.">
+    <meta name="author" content="Neyser Novoa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+
+    <meta property="og:title" content="Lambayeque Business Chamber">
+    <meta property="og:description" content="Discover the attractions and culture of Lambayeque.">
+    <meta property="og:image" content="https://neysernoli.github.io/wdd231/chamber/images/municipalidad.jpg">
+    <meta property="og:url" content="https://neysernoli.github.io/wdd231/chamber/discover.html">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="brand">
+                <img src="images/edificio.png" alt="Chamber Logo" class="logo" width="70" height="70">
+                <a href="index.html">Lambayeque Business Chamber</a>
+            </div>
+            <button id="menuBtn">☰</button>
+        </div>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="discover.html" class="active">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discover Lambayeque</h1>
+
+        <div id="visitor-message"></div>
+
+        <section id="places-grid">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <p><strong>Lambayeque Business Chamber</strong></p>
+            <p>Av. Ramón Castilla 123</p>
+            <p>Lambayeque, Peru</p>
+            <p>info@lambayequechamber.org</p>
+            <p>(074) 555-1234</p>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.svg" alt="github" width="40" height="40">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.svg" alt="linkedin" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.svg" alt="instagram" width="40" height="40">
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>WDD231 Class Project</p>
+            <p>&copy; <span id="year"></span> Neyser Novoa</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -8,4 +8,41 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+#places-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas: 
+    "card1 card2"
+    "card3 card4"
+    "card5 card6"
+    "card7 card8"; 
+}
+
+article:nth-child(1) {
+grid-area: card1;}
+article:nth-child(2) {
+grid-area: card2;}
+article:nth-child(3) {
+grid-area: card3;}
+article:nth-child(4) {
+grid-area: card4;}
+article:nth-child(5) {
+grid-area: card5;}
+article:nth-child(6) {
+grid-area: card6;}
+article:nth-child(7) {
+grid-area: card7;}
+article:nth-child(8) {
+grid-area: card8;}
+
+
+#places-grid article img {
+  transition: transform 0.3s ease;
+}
+
+#places-grid article img:hover {
+  transform: scale(1.05);
+}
+
 }
