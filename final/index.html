@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Discover the best attractions, culture, history, and tours in Lambayeque, Peru.">
+    <meta name="author" content="Neyser Novoa">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js" defer></script>
+
+    <meta property="og:title" content="Explore Lambayeque">
+    <meta property="og:description" content="Discover the best attractions, culture and history of Lambayeque, Peru.">
+    <meta property="og:image" content="https://neysernoli.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:url" content="https://neysernoli.github.io/wdd231/final/">
+</head>
+
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="brand">
+        <img src="images/favicon.ico" alt="Explore Lambayeque Logo" width="71" height="71">
+        <a href="index.html">Explore Lambayeque</a>
+      </div>
+      <button id="menuBtn" aria-label="Toggle navigation">☰</button>
+    </div>
+
+    <nav id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="places.html">Places</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <img src="images/hero.webp" alt="Lambayeque landscape" width="1024" height="512" loading="eager">
+      <div class="hero-content">
+        <h1>Explore Lambayeque</h1>
+        <p>Discover the culture, history, and nature of northern Peru.</p>
+        <a href="places.html" id="generateTourBtn" class="cta-button">Generate Tour ✨</a>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2>Featured Places</h2>
+      <div id="featured-grid"></div>
+    </section>
+
+    <section class="about">
+      <h2>About Us</h2>
+      <p>Explore Lambayeque is your guide to discovering one of Peru's most culturally rich regions. From ancient pyramids to beautiful beaches, we help you plan the perfect visit.</p>
+    </section>
+
+    <section class="tours">
+      <h2>Available Tours</h2>
+      <ul>
+        <li>
+          <strong>Archaeological Tour</strong> — Visit Sipán, Túcume and Huaca Rajada. <span>From $45</span>
+        </li>
+        <li>
+          <strong>Museum Tour</strong> — Explore the Brüning and Tumbas Reales museums. <span>From $20</span>
+        </li>
+        <li>
+          <strong>Nature Tour</strong> — Discover Pómac Forest and Laquipampa Reserve. <span>From $35</span>
+        </li>
+        <li>
+          <strong>Beach Tour</strong> — Relax at Pimentel and Santa Rosa beaches. <span>From $15</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>What are the most popular attractions in Lambayeque?</h3>
+        <p>The Museo Tumbas Reales de Sipán and the Tucume pyramids are among the most visited sites.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What museums should I visit?</h3>
+        <p>The Brüning and Tumbas Reales museums offer world-class archaeological collections.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What natural places can I explore?</h3>
+        <p>Pómac Forest and Laquipampa Reserve offer incredible wildlife and landscapes.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Neyser Novoa | Explore Lambayeque</p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <p><a href="#">Video Demo</a></p>
+  </footer>
+
+</body>
+
+
+</html>

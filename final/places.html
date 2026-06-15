@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places | Explore Lambayeque</title>
+  <meta name="description" content="Discover the best places to visit in Lambayeque, Peru. Museums, beaches, archaeological sites and more.">
+  <meta name="author" content="Neyser Novoa">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/places.js"></script>
+
+  <meta property="og:title" content="Places | Explore Lambayeque">
+  <meta property="og:description" content="Discover the best places to visit in Lambayeque, Peru.">
+  <meta property="og:image" content="https://neysernoli.github.io/wdd231/final/images/hero.webp">
+  <meta property="og:url" content="https://neysernoli.github.io/wdd231/final/places.html">
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="brand">
+        <img src="images/favicon.ico" alt="Explore Lambayeque Logo" width="71" height="71">
+        <a href="index.html">Explore Lambayeque</a>
+      </div>
+      <button id="menuBtn" aria-label="Toggle navigation">☰</button>
+    </div>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="places.html" class="active">Places</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Places to Visit</h1>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Museum">Museums</button>
+      <button class="filter-btn" data-filter="Archaeological">Archaeological</button>
+      <button class="filter-btn" data-filter="Nature">Nature</button>
+      <button class="filter-btn" data-filter="Beach">Beaches</button>
+      <button class="filter-btn" data-filter="Cultural">Cultural</button>
+    </div>
+    
+    <section id="places-grid"></section>
+  </main>
+
+  <dialog id="place-modal">
+    <h2 id="modal-name"></h2>
+    <p id="modal-category"></p>
+    <p id="modal-address"></p>
+    <p id="modal-description"></p>
+    <p id="modal-rating"></p>
+    <button id="close-modal">Close</button>
+  </dialog>
+
+  <dialog id="tour-modal">
+  <h2>Your Custom Tour</h2>
+  <div id="tour-list"></div>
+  <a href="contact.html" id="book-tour">Book This Tour 📩</a>
+  <button id="clear-tour">Clear Tour</button>
+  <button id="close-tour-modal">Close</button>
+</dialog>
+
+  <button id="view-tour-btn">View My Tour 🗺️</button>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Neyser Novoa | Explore Lambayeque</p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <p><a href="#">Video Demo</a></p>
+  </footer>
+
+</body>
+</html>

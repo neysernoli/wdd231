@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Explore Lambayeque</title>
+  <meta name="description" content="Contact Explore Lambayeque for tour information and travel inquiries.">
+  <meta name="author" content="Neyser Novoa">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+
+  <script src="scripts/contact.js" defer></script>
+
+  <meta property="og:title" content="Contact | Explore Lambayeque">
+  <meta property="og:description" content="Contact Explore Lambayeque for tour information.">
+  <meta property="og:image" content="https://neysernoli.github.io/wdd231/final/images/hero.webp">
+  <meta property="og:url" content="https://neysernoli.github.io/wdd231/final/contact.html">
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="brand">
+        <img src="images/favicon.ico" alt="Explore Lambayeque Logo" width="71" height="71">
+        <a href="index.html">Explore Lambayeque</a>
+      </div>
+      <button id="menuBtn" aria-label="Toggle navigation">☰</button>
+    </div>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="places.html">Places</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <form method="get" action="thankyou.html">
+
+      <label>
+        Full Name
+        <input type="text" name="name" required autocomplete="name" placeholder="John Doe">
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required autocomplete="email" placeholder="example@email.com">
+      </label>
+
+      <label>
+        Phone
+        <input type="tel" name="phone" autocomplete="tel" placeholder="+51 999 999 999">
+      </label>
+
+      <label>
+        Subject
+        <select name="subject" required>
+          <option value="" disabled selected>Select a subject</option>
+          <option value="tour">Tour Information</option>
+          <option value="booking">Booking</option>
+          <option value="general">General Inquiry</option>
+        </select>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="5" placeholder="Write your message here..."></textarea>
+      </label>
+
+      <input type="hidden" id="timestamp" name="timestamp">
+
+      <input type="submit" value="Send Message">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Neyser Novoa | Explore Lambayeque</p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <p><a href="#">Video Demo</a></p>
+  </footer>
+
+</body>
+</html>
