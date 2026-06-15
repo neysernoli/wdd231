@@ -97,6 +97,7 @@ header {
   height: 100%;
   object-fit: cover;
   display: block;
+  
 }
 
 .hero-content {
@@ -116,6 +117,7 @@ header {
   font-family: var(--heading-font);
   font-size: 2rem;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+
 }
 
 .hero-content p {
