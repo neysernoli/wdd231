@@ -4,35 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Attributions | Explore Lambayeque</title>
+  <meta name="description" content="Image and content attributions for the Explore Lambayeque website project.">
   <meta name="author" content="Neyser Novoa">
+
   <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <meta property="og:title" content="Attributions | Explore Lambayeque">
+  <meta property="og:description" content="Image and content attributions for the Explore Lambayeque website project.">
+  <meta property="og:image" content="https://neysernoli.github.io/wdd231/final/images/hero.webp">
+  <meta property="og:url" content="https://neysernoli.github.io/wdd231/final/attributions.html">
 </head>
 <body>
-  <h1>Attributions</h1>
-  <p>The following external resources were used in this project:</p>
+  <header>
+    <div class="top-bar">
+      <div class="brand">
+        <img src="images/favicon.ico" alt="Explore Lambayeque Logo" width="40" height="40">
+        <a href="index.html">Explore Lambayeque</a>
+      </div>
+      <button id="menuBtn" aria-label="Toggle navigation">☰</button>
+    </div>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="places.html">Places</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <h2>Images</h2>
-  <ul>
-    <li>Museo Tumbas Reales de Sipán — <a href="https://www.google.com" target="_blank">Google Images</a></li>
-    <li>Huaca Rajada — <a href="https://www.google.com" target="_blank">Google Images</a></li>
-    <li>Museo Brüning — <a href="https://www.google.com" target="_blank">Google Images</a></li>
-    <li>Reserva Laquipampa — <a href="https://www.google.com" target="_blank">Google Images</a></li>
-    <li>Playa Pimentel — <a href="https://www.google.com" target="_blank">Google Images</a></li>
-    <li>Bosque de Pómac — <a href="https://www.google.com" target="_blank">Google Images</a></li>
-    <li>Plaza de Armas de Lambayeque — <a href="https://www.google.com" target="_blank">Google Images</a></li>
-    <li>Complejo de Túcume — <a href="https://www.google.com" target="_blank">Google Images</a></li>
-  </ul>
+  <main>
+    <h1>Attributions</h1>
+    <p>The following external resources were used in this project:</p>
 
-  <h2>Fonts</h2>
-  <ul>
-    <li>Playfair Display & Roboto — <a href="https://fonts.google.com" target="_blank">Google Fonts</a></li>
-  </ul>
+    <h2>Images</h2>
+    <ul>
+      <li>All place images — <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google Images</a></li>
+    </ul>
 
-  <h2>Other</h2>
-  <ul>
-    <li>Favicon — <a href="https://favicon.io" target="_blank">favicon.io</a></li>
-  </ul>
+    <h2>Fonts</h2>
+    <ul>
+      <li>Playfair Display & Roboto — <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer">Google Fonts</a></li>
+    </ul>
 
-  <p><a href="index.html">Back to Home</a></p>
+    <h2>Other</h2>
+    <ul>
+      <li>Favicon — <a href="https://favicon.io" target="_blank" rel="noopener noreferrer">favicon.io</a></li>
+    </ul>
+
+    <p><a href="index.html">Back to Home</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Neyser Novoa | Explore Lambayeque</p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <p><a href="#">Video Demo</a></p>
+  </footer>
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
 </body>
 </html>
